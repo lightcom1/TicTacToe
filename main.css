@@ -1,0 +1,86 @@
+* {
+	user-select: none;
+}
+h1 {
+	text-align: center;
+}
+.area-wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#area {
+	width: 300px;
+	height: 300px;
+	background-color: blanchedalmond;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	box-sizing: border-box;
+	font-size: 34px;
+	color: brown;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+#modal-result-wrapper {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+#overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+#modal-window {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: center;
+}
+#content {
+	font-size: 28px;
+	line-height: 150px;
+}
+
+#btn-close {
+	width: 200px;
+	height: 50px;
+	font-size: 20px;
+	line-height: 50px;
+	background-color: rgb(219, 231, 49);
+	color: rgb(240, 104, 104);
+	text-align: center;
+	cursor: pointer;
+}
+@media (max-width: 768px) {
+	.box {
+		cursor: default;
+	}
+}
